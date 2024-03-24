@@ -1,0 +1,33 @@
+{
+    "appName":"STC钱包",
+    "page_title_create_account":"创建身份",
+    "next":"下一步",
+    "title_ok":"确定",
+    "title_cacel":"取消",
+    "title_confirm_memo":"确认助记词",
+    "tips_check_memo_order":"请按顺序点击助记词，以正确备份。",
+
+    "title_create_wallet":"创建STC钱包",
+    "title_recover_wallet":"恢复钱包",
+    "desc_use_new_wallet":"使用新的钱包",
+    "desc_use_mine_wallet":"使用我已拥有的钱包",
+    "idCardName":"身份昵称",
+    "title_create_id":"创建身份",
+    "desc_create_id":"设定你的身份名,并创建一组密码，你将拥有一个全新的钱包",
+    "title_id_card":"身份名称",
+    "tips_input_id_card":"请输入1-12个字符",
+    "title_create_pwd":"创建密码",
+    "tip_input_pwd":"输入密码",
+    "tip_reset_enter_pwd":"重复输入密码",
+
+    
+    "title_sure_backup":"已确认备份",
+    "title_backup_memo":"备份助记词",
+    "tips_backup_memo":"请按顺序抄写助记词，确保备份正确",
+    "tips_backup_one":"妥善保管助记词到隔离网络的地方",
+    "tips_backup_two":"请勿将助记词在互联网环境下分享和存储，比如邮件，相册，社交应用等。",
+    
+    "title_back_up_can_not_screen":"请勿截屏",
+    "tips_back_up_can_not_screen":"请不要通过截屏的方式进行备份，这将会增加助记词被盗和丢失的风险。图库一旦被恶意软件窃取，将会造成资产损失。"
+
+}

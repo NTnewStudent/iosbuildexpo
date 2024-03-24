@@ -1,0 +1,31 @@
+{
+
+    "appName":"STC Wallet",
+    "page_title_create_account":"Create Account",
+    "next":"Next",
+    "title_ok":"OK",
+    "title_cacel":"Cacel",
+
+    "title_confirm_memo":"confirm mnemonic word ", 
+    "tips_check_memo_order":"Please click mnemonics in order to back up correctly." ,
+
+    "title_back_up_can_not_screen":"Do not take screenshots ", 
+    "tips_back_up_can_not_screen":"Please do not take a screenshot of the backup, this will increase the risk of mnemonic theft and loss. Once the library is stolen by malware, it will cause asset loss." ,
+    "title_create_wallet": "Create STC Wallet",
+    "title_recover_wallet": "Recover wallet",
+    "desc_use_new_wallet": "Use new wallet",
+    "desc_use_mine_wallet": "I already have wallet",
+    "idCardName": "name",
+    "title_create_id":"Create idCard",
+    "desc_create_id":"Set up your identity and create a set of passwords, and you'll have a brand new wallet",
+    "title_id_card": "Identity Name",
+    "tips_input_id_card": "Please enter 1-12 characters",
+    "title_create_pwd": "Create Password",
+    "tip_input_pwd": "Enter password",
+    "tip_reset_enter_pwd": "Repeat password",
+    "title_sure_backup":"Backup confirmed",
+    "title_backup_memo":"Backup mnemonic phrase",
+    "tips_backup_memo": "Please copy the mnemonic in order to ensure the backup is correct",
+    "tips_backup_one": "Save the mnemonic in a place isolated from the network",
+    "tips_backup_two": "Do not share and store mnemonic words in the Internet environment, such as emails, photo albums, social applications, etc."
+}
