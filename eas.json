@@ -6,7 +6,12 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "image": "latest"
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      }
       
     },
     "preview": {
