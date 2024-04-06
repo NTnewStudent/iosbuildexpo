@@ -32,10 +32,7 @@
     "production": {
       "android": {
         "image": "latest",
-        "buildType": "apk",
-        "permissions": ["android.permissions.INTERNET",
-                      "android.permissions.WRITE_EXTERNAL_STORAGE",
-                      "android.permissions.READ_EXTERNAL_STORAGE"]
+        "buildType": "apk"
       },
       "ios": {
         "image": "latest"

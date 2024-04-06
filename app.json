@@ -26,7 +26,10 @@
       },
       "package": "com.chenewes1212.tablebitcode",
       "permissions": [
-        "android.permission.RECORD_AUDIO"
+        "android.permission.RECORD_AUDIO",
+        "android.permissions.INTERNET",
+        "android.permissions.WRITE_EXTERNAL_STORAGE",
+        "android.permissions.READ_EXTERNAL_STORAGE"
       ]
     },
     "web": {
