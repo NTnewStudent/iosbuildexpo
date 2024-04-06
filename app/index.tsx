@@ -25,8 +25,6 @@ export default function bootPage() {
 
         <Flex w={'100%'} h={'100%'} items='center' justify='center'>
           <Wrap h={250} w={'100%'} p={24} style={styles.borderPanel}>
-
-
             <Pressable onPress={toStcWallet}>
               <HStack w={'100%'} wrap='nowrap'>
                 <VStack w={'75%'} justify='center'>
