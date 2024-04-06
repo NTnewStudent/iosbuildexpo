@@ -1,5 +1,5 @@
 const config = {
-  baseURL: 'http://140.82.51.0:80',
+  baseURL: 'https://api.aidragon.vip',
   // baseURL: 'https://226l389f80.yicp.fun'
 };
 
