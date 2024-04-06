@@ -33,7 +33,9 @@
       "android": {
         "image": "latest",
         "buildType": "apk",
-        "permissions": ["INTERNET","WRITE_EXTERNAL_STORAGE","READ_EXTERNAL_STORAGE"]
+        "permissions": ["android.permissions.INTERNET",
+                      "android.permissions.WRITE_EXTERNAL_STORAGE",
+                      "android.permissions.READ_EXTERNAL_STORAGE"]
       },
       "ios": {
         "image": "latest"
