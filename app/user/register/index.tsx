@@ -25,7 +25,7 @@ export default function register() {
     const { translations } = useContext(LocalizationContext);
     const [colorModel, setColorModel] = useState(useColorScheme())
     const [formData, setFormData] = useState<UserFormData>({ idCard: '', userPwd: '', userRetryPwd: '', userMemo: '' })
-    const [errorMsg,setErrorMsg] = useState<String>('')
+    const [errorMsg,setErrorMsg] = useState("")
     const onClick = () => {
         try {
             const notEmpty: string[] = ['idCard', 'userPwd', 'userRetryPwd']
@@ -76,16 +76,15 @@ export default function register() {
                 }}
             />
             <Box w={'100%'} h={'100%'} p={12}>
-
-                { errorMsg!==''??
-                    <Wrap >
-                        <Text>
-                            {errorMsg}
-                        </Text>
-                    </Wrap>
-                }
-           
                 <Flex w={'100%'} h={'100%'} justify='start'>
+
+                    { errorMsg!==''?
+                        <Wrap w={100} h={100}>
+                            <Text>
+                                {errorMsg}
+                            </Text>
+                        </Wrap> :<></>
+                    }
                     <VStack>
                         <Text variant='h6' color={Colors[colorModel ?? 'light']['text']}>
                             {translations.title_create_id}
