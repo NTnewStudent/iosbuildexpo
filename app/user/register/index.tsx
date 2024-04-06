@@ -1,6 +1,6 @@
 import { StyleSheet, Pressable } from 'react-native';
 import { useContext, useState } from 'react';
-import { Text, VStack, Box, Flex, Divider, TextInput, IconButton } from '@react-native-material/core';
+import { Text, VStack, Box, Flex, Divider, TextInput, IconButton, Wrap } from '@react-native-material/core';
 import { View } from '@/components/Themed';
 import LocalizationContext from "@/locales/index"
 import Colors from '@/constants/Colors';
@@ -12,6 +12,7 @@ import { decrypt } from '@/utils/ase';
 import { addToSecureStore } from '@/store/localstore';
 import { UserStoreKey } from '@/store/localstoreKey';
 import { encrypt } from "@/utils/ase"
+import { err } from 'react-native-svg/lib/typescript/xml';
 type UserFormData = {
     idCard: string,
     userPwd: string,
@@ -24,7 +25,7 @@ export default function register() {
     const { translations } = useContext(LocalizationContext);
     const [colorModel, setColorModel] = useState(useColorScheme())
     const [formData, setFormData] = useState<UserFormData>({ idCard: '', userPwd: '', userRetryPwd: '', userMemo: '' })
-
+    const [errorMsg,setErrorMsg] = useState<String>('')
     const onClick = () => {
         try {
             const notEmpty: string[] = ['idCard', 'userPwd', 'userRetryPwd']
@@ -54,6 +55,8 @@ export default function register() {
             })
         } catch (error) {
             console.error(error)
+            setErrorMsg(JSON.stringify(error))
+            
         }
 
     }
@@ -73,6 +76,15 @@ export default function register() {
                 }}
             />
             <Box w={'100%'} h={'100%'} p={12}>
+
+                { errorMsg!==''??
+                    <Wrap >
+                        <Text>
+                            {errorMsg}
+                        </Text>
+                    </Wrap>
+                }
+           
                 <Flex w={'100%'} h={'100%'} justify='start'>
                     <VStack>
                         <Text variant='h6' color={Colors[colorModel ?? 'light']['text']}>
